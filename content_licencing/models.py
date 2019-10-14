@@ -1,6 +1,8 @@
 from django.db import models
 from django.conf import settings
 
+from . import settings as content_licencing_settings
+
 try:
     from django.contrib.contenttypes.generic import GenericForeignKey
 except:
@@ -78,7 +80,7 @@ class ContentLicenceRegistry(models.Model):
     uploaded_at = models.DateTimeField(auto_now_add=True)
     last_modified_at = models.DateTimeField(auto_now=True)
     licence = models.CharField(max_length=100, choices=LICENCE_CHOICES,
-                               default=settings.CONTENT_LICENCING_DEFAULT_LICENCE)
+                               default=content_licencing_settings.CONTENT_LICENCING_DEFAULT_LICENCE)
     licence_version = models.CharField(max_length=10)
     creator_name = models.CharField(max_length=355) # first an last name/ company name of the owner, if not the user
     creator_link = models.CharField(max_length=355, null=True, blank=True) # link to owner website

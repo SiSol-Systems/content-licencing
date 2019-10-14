@@ -1,9 +1,7 @@
 {% load localcosmos_tags %}
-<table>
-	<tr>
-		{% spaceless %}{% for widget in widget.subwidgets %}<td>{% include widget.template_name %}</td>{% endfor %}{% endspaceless %}
-	</tr>
-</table>
+<div class="row no-gutters">
+		{% spaceless %}{% for widget in widget.subwidgets %}<div class="col{% if forloop.last%}-3{% endif %}">{% include widget.template_name %}</div>{% endfor %}{% endspaceless %}
+</div>
 
 <script>
 	(function(){

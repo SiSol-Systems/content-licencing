@@ -8,6 +8,7 @@ content_licencing/forms.py
 content_licencing/licences.py
 content_licencing/mixins.py
 content_licencing/models.py
+content_licencing/settings.py
 content_licencing/tests.py
 content_licencing/view_mixins.py
 content_licencing/views.py
