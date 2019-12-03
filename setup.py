@@ -7,7 +7,7 @@ install_requires = []
 
 setup(
     name='content_licencing',
-    version='0.2.1',
+    version='0.2.3',
     description='Content licencing for django',
     long_description=long_description,
     long_description_content_type='text/markdown',
