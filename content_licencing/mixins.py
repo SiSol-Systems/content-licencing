@@ -1,6 +1,6 @@
 from django.conf import settings
 from django import forms
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from .models import ContentLicenceRegistry
 from .licences import LICENCE_CHOICES, DEFAULT_LICENCE, ContentLicence
