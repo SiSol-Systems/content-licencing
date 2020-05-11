@@ -18,4 +18,5 @@ content_licencing.egg-info/SOURCES.txt
 content_licencing.egg-info/dependency_links.txt
 content_licencing.egg-info/top_level.txt
 content_licencing/migrations/0001_initial.py
+content_licencing/migrations/0002_auto_20200511_0923.py
 content_licencing/migrations/__init__.py
