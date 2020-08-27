@@ -85,7 +85,7 @@ class ContentLicenceRegistry(models.Model):
     creator_name = models.CharField(max_length=355) # first an last name/ company name of the owner, if not the user
     creator_link = models.CharField(max_length=355, null=True, blank=True) # link to owner website
     source_link = models.TextField(null=True, blank=True) # direct link to source text/source image
-    language = models.CharField(max_length=7, choices=settings.LANGUAGES, null=True)
+    language = models.CharField(max_length=15, null=True)
     sha256 = models.CharField(max_length=355)
 
     contributors = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='contributors')
